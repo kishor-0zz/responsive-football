@@ -3,4 +3,211 @@ font-family: 'Poppins', sans-serif; */
 
 body{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-X: hidden;
+}
+.container{
+    padding: 70px 140px;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+.primary-btn{
+    padding: 10px 24px;
+    background: #EB3D40;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif; 
+    border-radius: 0;
+    transition: all 0.3s ease;
+
+}
+.primary-btn:hover{
+    background: #3dbafdbe;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ..................top-bar..................... */
+#top-bar{
+    background: #2D25A0;  
+}
+.top-container{
+    padding: 86px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top-bar .top-left h2{
+    font-size: 64px;
+    color: white;
+    font-weight: 700;
+    line-height: 80px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+#top-bar .top-right img{
+    width: 556px;
+    transition: all 0.5s ease;
+}
+#top-bar:hover .top-right img{
+    transform: scale(1.1);
+}
+#top-bar .top-left a i{
+    margin-left: 8px;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+
+/* ..................players.............. */
+#players{
+    background: white;
+}
+#players .players-inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+#players .player{
+    
+    padding: 15px;
+    box-shadow: 0 0 10px black;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+#players .player-img img{
+    width: 100%;
+}
+#players .player-info h3{
+font-size: 28px;
+font-weight: 700;
+color: #18191F;
+text-transform: capitalize;
+margin: 6px 0 6px 0;
+
+}
+#players .player-info p{
+    margin: 0 0 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+    line-height: 26px;
+    
+}
+/* ...........highlights............. */
+#highlights{
+    background: white;
+}
+#highlights .highlights-inner{
+    display: flex;
+    align-items: center;
+}
+
+#highlights .highlights-inner .highlights-left{
+    padding-right: 66px;
+}
+
+#highlights .highlights-inner .highlights-left h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0A0826;
+    text-transform: capitalize;
+    margin-bottom: 6px;
+    line-height: 60px;
+}
+#highlights .highlights-inner .highlights-left p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin:  0 0 24px 0;
+}
+#highlights .highlights-inner .highlights-left a i{
+    margin-left: 8px;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+
+
+#highlights .highlights-inner .highlights-right img{
+    width: 530px;
+}
+
+/* .............host-cities................... */
+#host-cities{
+    background: #2D25A0;
+}
+#host-cities .section-title h2{
+    
+        font-size: 40px;
+        color: white;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin-bottom: 10px;
+    
+}
+#host-cities .host-cities-inner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+}
+#host-cities .host-cities-item{
+    background: white;
+    cursor: pointer;
+    
+}
+#host-cities .host-cities-item  img{
+ width: 100%;
+ height: 200px;
+}
+#host-cities .host-cities-item .host-cities-title h3{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+/* ..............sponsor............. */
+#sponsor{
+    background: white;
+}
+#sponsor .section-title h2{
+    text-align: center;
+}
+#sponsor .sponsor-img{
+    display: flex;
+    justify-content: center;
+}
+/* footer */
+.container{
+    background: white;
+}
+.footer-logo img{
+
+}
+.footer-icon {
+
+}
+
+
+/* media quiry */
+@media only screen and (max-width:767px) {
+    .container{
+        width: 100%;
+        padding: 70px 0px;
+    }
+    #players .players-inner{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 0px;
+    }
 }
