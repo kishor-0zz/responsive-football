@@ -202,6 +202,9 @@ margin: 6px 0 6px 0;
 
 /* media quiry */
 @media only screen and (max-width:767px) {
+    body{
+        overflow-x: hidden;
+    }
     .container{
         width: 100%;
         padding: 70px 0px;
